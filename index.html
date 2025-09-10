@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diễm Baby Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .book-container {
+            padding: 5%;
+            background-image: url('assets/Background.png');
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8em;
+            color: #d8819d;
+            font-weight: bold;
+        }
+        .page-header span {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.7em;
+            display: block;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .service-table th, .service-table td {
+            border: 1px solid #f0e0e5;
+            padding: 8px;
+            text-align: left;
+            font-size: 0.85em;
+            vertical-align: top;
+        }
+        .service-table th {
+            background-color: #fbf6f7;
+            font-weight: bold;
+            color: #d8819d;
+        }
+        .service-table td:nth-child(1) { width: 25%; font-weight: bold; color: #555; }
+        .service-table td:nth-child(2) { width: 40%; }
+        .service-table td:nth-child(3) { width: 15%; text-align: center;}
+        .service-table td:nth-child(4) { width: 20%; text-align: right;}
+
+        .additional-services {
+            margin-top: 30px;
+        }
+        .additional-services h3 {
+            font-size: 1.2em;
+            color: #d8819d;
+            border-bottom: 1px dashed #f0e0e5;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .additional-services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .additional-services li {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .additional-services li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #d8819d;
+            font-weight: bold;
+        }
+        .footer-info {
+            margin-top: 10%;
+            font-size: 15px;
+            text-align: center;
+            color: #5a0000;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #d8819d;
+            text-align: center;
+            margin-bottom: 25px;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+        }
+        .package-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #e65287;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .package-title::before {
+            content: '🌸';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.9em;
+        }
+        .package-details ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 10px;
+            font-size: 0.9em;
+        }
+        .package-details li {
+            list-style-type: none;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+        .package-details li::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            color: #e65287;
+            font-weight: bold;
+        }
+
+        .right-page .contact-info {
+            margin-top: auto;
+            border-top: 1px dashed #f0e0e5;
+            padding-top: 15px;
+        }
+        .right-page .contact-info p {
+            font-size: 0.8em;
+            margin: 3px 0;
+        }
+        .right-page .contact-info .highlight {
+            color: #e65287;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+
+        <div>
+            <div class="page-header" style="color: #e65287;">
+                DIỄM BABY CARE<br><span style="color: #d8819d; font-size: 0.6em;">DỊCH VỤ MẸ & BÉ</span>
+            </div>
+            <h2 class="section-title">LIỆU TRÌNH CHĂM SÓC MẸ SAU SINH</h2>
+
+            <div class="package-group">
+                <p class="package-title">GÓI 1: Dành cho mẹ sinh thường</p>
+                <ul class="package-details">
+                    <li>Vệ sinh vết may tầng sinh môn (chuẩn y khoa)</li>
+                    <li>Xông hơi toàn thân bằng thảo dược (lá tươi, lá khô, lá mẹ + muối biển…)</li>
+                    <li>Massage xoa bóp toàn thân bằng rượu gừng nghệ, tinh dầu (giúp phục hồi độ đàn hồi da, giảm nhăn, giảm thâm, thư giãn…)</li>
+                    <li>Massage đầu, cổ, vai, gáy (giảm nhức mỏi)</li>
+                    <li>Massage mặt, đắp mặt nạ từ nguyên liệu thiên nhiên (nghệ, lòng đỏ trứng gà, sữa chua + cám gạo, trà xanh, yến mạch…)</li>
+                    <li>Chăm sóc bụng và da vùng bụng bằng muối thảo dược (giúp làm ấm bụng, săn chắc, hỗ trợ giảm mỡ)</li>
+                    <li>Xông vùng kín bằng thảo dược</li>
+                </ul>
+            </div>
+
+            <div class="package-group">
+                <p class="package-title">GÓI 2: Dành cho mẹ sinh mổ</p>
+                <ul class="package-details">
+                    <li>Vệ sinh chăm sóc vết mổ (chuẩn y khoa)</li>
+                    <li>Xông hơi toàn thân bằng thảo dược</li>
+                    <li>Massage xoa bóp toàn thân bằng rượu gừng nghệ, tinh dầu (phục hồi da, giảm thâm, tăng đàn hồi)</li>
+                    <li>Massage đầu, cổ, vai, gáy (giảm nhức mỏi)</li>
+                    <li>Massage mặt, đắp mặt nạ thiên nhiên (nghệ, trứng gà, sữa chua + cám gạo, trà xanh, yến mạch…)</li>
+                    <li>Xông vùng kín bằng thảo dược</li>
+                </ul>
+            </div>
+
+            <div class="package-group">
+                <p class="package-title">GÓI 3: Chăm sóc chuyên sâu kết hợp</p>
+                <ul class="package-details">
+                    <li>Vệ sinh vết may tầng sinh môn hoặc chăm sóc vết mổ (tùy trường hợp)</li>
+                    <li>Xông hơi toàn thân bằng thảo dược</li>
+                    <li>Massage toàn thân bằng rượu gừng nghệ, tinh dầu thiên nhiên</li>
+                    <li>Massage đầu, cổ, vai, gáy (giảm căng thẳng, mệt mỏi)</li>
+                    <li>Massage mặt & đắp mặt nạ thiên nhiên</li>
+                    <li>Đắp bụng bằng muối thảo dược hoặc lá trầu (giúp bụng ấm, da săn chắc, sáng mịn)</li>
+                    <li>Tẩy tế bào chết toàn thân kết hợp massage thư giãn (giúp phục hồi làn da, giảm sạm nám)</li>
+                    <li>Ủ body đá muối hoặc thảo dược (theo nhu cầu)</li>
+                    <li>Xông vùng kín bằng thảo dược</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">LIỆU TRÌNH CHĂM BÉ</h2>
+
+            <div class="package-group">
+                <ul class="package-details">
+                    <li>Massage toàn thân cho em giúp lưu thông tuần hoàn</li>
+                    <li>Tắm cho bé chuẩn y khoa</li>
+                    <li>Vệ sinh cho bé : tai, mắt , mũi , miệng , rốn , bộ phận sinh dục</li>
+                    <li>Hơ lá trầu cho bé cứng cáp</li>
+                    <li>Tư vấn cho mẹ về cách chăm sóc bé</li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-top: 10%;">
+            <div class="page-header">
+                Các gói dịch vụ của <br><span>DIỄM BABY CARE</span>
+            </div>
+
+            <table class="service-table">
+                <thead>
+                    <tr>
+                        <th>Gói Dịch Vụ</th>
+                        <th>Công Việc</th>
+                        <th>Thời Gian</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gói massage bầu cơ bản</td>
+                        <td>
+                            – Massage thư giãn toàn thân (mặt, vai, gáy, lưng, tay, chân)<br>
+                            – Chăm sóc da mặt cơ bản<br>
+                            – Ngâm chân thảo dược
+                        </td>
+                        <td>70 phút</td>
+                        <td>159.000đ/ 1 buổi</td>
+                    </tr>
+                    <tr>
+                        <td>Gói massage bầu chuyên sâu</td>
+                        <td>
+                            – Massage chuyên sâu toàn thân (giúp giảm đau mỏi)<br>
+                            – Chăm sóc da mặt chuyên sâu<br>
+                            – Tẩy tế bào chết toàn thân<br>
+                            – Ngâm chân thảo dược + massage chân
+                        </td>
+                        <td>90 phút</td>
+                        <td>189.000đ/ 1 buổi</td>
+                    </tr>
+                    <tr>
+                        <td>Gói giảm mỡ bụng sau sinh</td>
+                        <td>
+                            – Massage bụng chuyên sâu<br>
+                            – Quấn nóng thảo dược<br>
+                            – Đai nịt bụng
+                        </td>
+                        <td>60 phút</td>
+                        <td>Gói 10 buổi:<br>1.700.000đ<br>Cam kết giảm 5-15cm</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="additional-services">
+                <h3>Các dịch vụ khác</h3>
+                <ul>
+                    <li><span>Gội đầu dưỡng sinh</span><span>60.000đ</span></li>
+                    <li><span>Ngâm chân thảo dược + massage chân</span><span>60.000đ</span></li>
+                    <li><span>Tẩy tế bào chết toàn thân</span><span>60.000đ</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <p>Dịch vụ chăm sóc mẹ và bé sau sinh</p>
+                <p>DIỄM BABY CARE</p>
+                <p>Hotline: 0935 827 402</p>
+                <p>Fanpage: Diễm Baby Care</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
